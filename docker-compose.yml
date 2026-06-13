@@ -1,0 +1,15 @@
+# run the entire pipeline locally with one command: docker compose up
+# the pipeline container ingests the batches, validates, loads the duckdb warehouse,
+# and reports dq scores. data/ is mounted read-only; warehouse/ and logs/ receive output.
+
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./data:/app/data:ro          # raw source (read-only)
+      - ./warehouse:/app/warehouse    # duckdb output
+      - ./logs:/app/logs              # failure alerts
+    # override the default command to run a single batch, e.g.:
+    #   docker compose run --rm pipeline python -m tax_pipeline.orchestration.flow day3

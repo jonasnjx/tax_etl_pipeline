@@ -1,0 +1,26 @@
+# pipeline settings: paths, rules, parameters
+
+data:
+  # raw data is read-only; pipeline never writes here
+  # folder to scan for batch files
+  individual_dir: data/individual/
+  individual_pattern: "individual_tax_returns_*.csv"
+  employer_json: data/employer/employers.json
+
+validation:
+  # rule 2: nric format
+  nric_pattern: "^[STFG][0-9]{7}[A-Z]$"
+  # rule 3: postal code is 6 digits
+  postal_pattern: "^[0-9]{6}$"
+  # rule 6: cpf mandatory for residents only
+  cpf_required_status: "Resident"
+
+orchestration:
+  # retry a failed task up to this many times
+  retries: 3
+  # wait this many seconds before each retry (backoff grows each attempt)
+  retry_delay_seconds: [10, 30, 60]
+
+api:
+  # simple api-key auth; override for a real deployment
+  api_key: "for-demo-purpose-only"

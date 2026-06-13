@@ -1,0 +1,15 @@
+# keep the build context small and clean
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+warehouse/
+*.duckdb
+logs/
+docs/
+.git/
+.gitignore
+README.md
+tests/

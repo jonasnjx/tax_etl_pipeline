@@ -1,0 +1,244 @@
+[
+  {
+    "employer_id": "EMP001",
+    "company_name": "TechVentures Pte Ltd",
+    "uen": "202012345A",
+    "industry": "Information Technology",
+    "address": "1 Fusionopolis Way, #08-01, Singapore 138632",
+    "employee_count": 450
+  },
+  {
+    "employer_id": "EMP002",
+    "company_name": "NetSecure Solutions",
+    "uen": "201923456B",
+    "industry": "Cybersecurity",
+    "address": "5 Changi Business Park, #03-12, Singapore 486038",
+    "employee_count": 120
+  },
+  {
+    "employer_id": "EMP003",
+    "company_name": "DataInsights Asia",
+    "uen": "202134567C",
+    "industry": "Data Analytics",
+    "address": "10 Anson Road, #22-05, Singapore 079903",
+    "employee_count": 85
+  },
+  {
+    "employer_id": "EMP004",
+    "company_name": "Precision Accounting Group",
+    "uen": "199845678D",
+    "industry": "Professional Services",
+    "address": "8 Shenton Way, #36-01, Singapore 068811",
+    "employee_count": 200
+  },
+  {
+    "employer_id": "EMP005",
+    "company_name": "BuildRight Engineering",
+    "uen": "200156789E",
+    "industry": "Engineering & Construction",
+    "address": "21 Tampines Industrial Park, Singapore 528752",
+    "employee_count": 340
+  },
+  {
+    "employer_id": "EMP006",
+    "company_name": "CreativeMinds Studio",
+    "uen": "202067890F",
+    "industry": "Design & Media",
+    "address": "71 Ayer Rajah Crescent, #04-08, Singapore 139951",
+    "employee_count": 45
+  },
+  {
+    "employer_id": "EMP007",
+    "company_name": "CloudScale Systems",
+    "uen": "201878901G",
+    "industry": "Cloud Infrastructure",
+    "address": "3 Science Park Drive, #02-15, Singapore 118223",
+    "employee_count": 180
+  },
+  {
+    "employer_id": "EMP008",
+    "company_name": "Singapore Financial Advisory",
+    "uen": "199589012H",
+    "industry": "Financial Services",
+    "address": "1 Raffles Place, #44-01, Singapore 048616",
+    "employee_count": 520
+  },
+  {
+    "employer_id": "EMP009",
+    "company_name": "LogiFlow Pte Ltd",
+    "uen": null,
+    "industry": "Logistics & Supply Chain",
+    "address": "15 Jurong Port Road, Singapore 619119",
+    "employee_count": 280
+  },
+  {
+    "employer_id": "EMP010",
+    "company_name": "InnoProduct Labs",
+    "uen": "202190123J",
+    "industry": "Product Development",
+    "address": "80 Robinson Road, #12-03, Singapore 068898",
+    "employee_count": 95
+  },
+  {
+    "employer_id": "EMP011",
+    "company_name": "Ministry of National Development",
+    "uen": "T08GA0001A",
+    "industry": "Government",
+    "address": "5 Maxwell Road, #21-00, Singapore 069110",
+    "employee_count": 1200
+  },
+  {
+    "employer_id": "EMP012",
+    "company_name": "National University Hospital",
+    "uen": "198500843R",
+    "industry": "Healthcare",
+    "address": "5 Lower Kent Ridge Road, Singapore 119074",
+    "employee_count": 6500
+  },
+  {
+    "employer_id": "EMP013",
+    "company_name": "ComplyFirst Regulatory",
+    "uen": "201701234K",
+    "industry": "Regulatory Compliance",
+    "address": "6 Battery Road, #23-06, Singapore 049909",
+    "employee_count": 60
+  },
+  {
+    "employer_id": "EMP014",
+    "company_name": "GlobalConsult Partners",
+    "uen": "200812345L",
+    "industry": "Management Consulting",
+    "address": "168 Robinson Road, #30-01, Singapore 068912",
+    "employee_count": 350,
+    "global_hq": "London, UK",
+    "subsidiary_of": "GlobalConsult International plc"
+  },
+  {
+    "employer_id": "EMP015",
+    "company_name": "GovTech Solutions",
+    "uen": "201612345M",
+    "industry": "Government Technology",
+    "address": "10 Pasir Panjang Road, #10-01, Singapore 117438",
+    "employee_count": 890
+  },
+  {
+    "employer_id": "EMP016",
+    "company_name": "MediCare Holdings",
+    "uen": "200423456N",
+    "industry": "Healthcare",
+    "address": "2 Jalan Bukit Merah, Singapore 169547",
+    "employee_count": "320"
+  },
+  {
+    "employer_id": "EMP017",
+    "company_name": "EduBright Learning",
+    "uen": "201534567O",
+    "industry": "Education",
+    "address": "20 Upper Circular Road, Singapore 058416",
+    "employee_count": 150
+  },
+  {
+    "employer_id": "EMP018",
+    "company_name": "RetailMax Pte Ltd",
+    "uen": "200645678P",
+    "industry": "Retail",
+    "address": "1 HarbourFront Walk, #01-50, Singapore 098585",
+    "employee_count": 780
+  },
+  {
+    "employer_id": "EMP019",
+    "company_name": "GreenEnergy Solutions",
+    "uen": "202056789Q",
+    "industry": "Energy & Utilities",
+    "address": "30 Toh Guan Road, Singapore 608840",
+    "employee_count": 110
+  },
+  {
+    "employer_id": "EMP020",
+    "company_name": "Maritime Shipping Corp",
+    "uen": null,
+    "industry": "Maritime & Shipping",
+    "address": "460 Alexandra Road, Singapore 119963",
+    "employee_count": 450
+  },
+  {
+    "employer_id": "EMP021",
+    "company_name": "PropertyVista Realty",
+    "uen": "201867890R",
+    "industry": "Real Estate",
+    "address": "111 Somerset Road, #15-08, Singapore 238164",
+    "employee_count": 65
+  },
+  {
+    "employer_id": "EMP022",
+    "company_name": "FoodRepublic Holdings",
+    "uen": "199978901S",
+    "industry": "Food & Beverage",
+    "address": "50 Jurong Gateway, Singapore 608549",
+    "employee_count": 920
+  },
+  {
+    "employer_id": "EMP023",
+    "company_name": "AutoDrive Technologies",
+    "uen": "202189012T",
+    "industry": "Automotive Technology",
+    "address": "5 Cleantech Loop, Singapore 637183",
+    "employee_count": 75
+  },
+  {
+    "employer_id": "EMP024",
+    "company_name": "BankFirst Singapore",
+    "uen": "198790123U",
+    "industry": "Banking",
+    "address": "12 Marina Boulevard, #30-01, Singapore 018982",
+    "employee_count": 3200
+  },
+  {
+    "employer_id": "EMP025",
+    "company_name": "InsureTech Asia",
+    "uen": "201901234V",
+    "industry": "Insurance",
+    "address": "9 Temasek Boulevard, #20-05, Singapore 038989",
+    "employee_count": 240
+  },
+  {
+    "employer_id": "EMP026",
+    "company_name": "PharmaCare Labs",
+    "uen": "200512345W",
+    "industry": "Pharmaceutical",
+    "address": "11 Biopolis Way, #07-01, Singapore 138667",
+    "employee_count": 190
+  },
+  {
+    "employer_id": "EMP027",
+    "company_name": "AeroStar Aviation",
+    "uen": "200823456X",
+    "industry": "Aviation",
+    "address": "60 Airport Boulevard, Singapore 819643",
+    "employee_count": 680
+  },
+  {
+    "employer_id": "EMP028",
+    "company_name": "LegalEase Associates",
+    "uen": "201134567Y",
+    "industry": "Legal Services",
+    "address": "6 Raffles Quay, #14-06, Singapore 048580",
+    "employee_count": 85
+  },
+  {
+    "employer_id": "EMP029",
+    "company_name": "TelecomOne Singapore",
+    "uen": "199245678Z",
+    "industry": "Telecommunications",
+    "address": "31 Exeter Road, Singapore 239732",
+    "employee_count": 4100
+  },
+  {
+    "employer_id": "EMP030",
+    "company_name": "SmartBuild Construction",
+    "uen": "201856789A",
+    "industry": "Construction",
+    "address": "25 Defu Lane, Singapore 539216",
+    "employee_count": 560
+  }
+]

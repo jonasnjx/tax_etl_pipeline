@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Pipeline outputs (anchored to repo root so they don't match src/.../warehouse)
+/warehouse/
+*.duckdb
+*.parquet
+/logs/
+
+# personal working notes (not committed); docs/ and README.md ARE committed
+/reference/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

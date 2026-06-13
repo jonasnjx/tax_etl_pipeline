@@ -1,0 +1,14 @@
+[project]
+name = "tax-pipeline"
+version = "0.1.0"
+description = "Government tax-data ingestion, validation, and data-quality pipeline"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra -q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,19 @@
+taxpayer_id,nric,full_name,filing_status,assessment_year,filing_date,annual_income_sgd,chargeable_income_sgd,tax_payable_sgd,tax_paid_sgd,total_reliefs_sgd,number_of_dependents,occupation,residential_status,postal_code,housing_type,cpf_contributions_sgd,foreign_income_sgd,employer_id,batch_date,record_type
+SG001,S1234567A,Tan Wei Ming,Single,2023,2024-03-15,85000,72050,8205,8500,12950,0,Senior Software Engineer,Resident,238100,Private Condo,17000,0,EMP001,2024-04-15,update
+SG005,S5678901E,Raj Kumar,Married,2023,2024-03-20,48000,44050,2405,2800,3950,1,Data Analyst,Resident,460123,HDB 2-room,9600,0,EMP003,2024-04-15,update
+SG010,S0123456J,David Lim,Married,2023,2024-01-25,76000,63200,6320,6800,12800,1,Project Manager,Resident,569234,HDB 5-room,15200,0,EMP005,2024-04-15,update
+SG019,S9012345S,Grace Liu,Single,2023,2024-02-26,92000,78100,9310,8900,13900,0,Finance Director,Resident,018956,CBD Office,18400,0,EMP008,2024-04-15,update
+SG027,S7890123A,Mohammad Firdaus,Single,2023,2024-04-15,59000,52050,4205,4600,6950,0,Cloud Engineer,Resident,238200,Private Condo,11800,0,EMP001,2024-04-15,update
+SG003,S3456789C,Ahmad Rahman,Single,2023,2024-04-10,65000,57050,5205,5400,7950,0,Network Engineer,Resident,560123,HDB 3-room,13000,0,EMP002,2024-04-15,correction
+SG008,S8901234H,Lee Hwee Choo,Married,2023,2024-03-08,74000,63550,6355,6100,10450,2,Accountant,Resident,119966,HDB 5-room,14800,0,EMP004,2024-04-15,correction
+SG014,S4567890N,Kevin Tan,Married,2023,2024-03-25,99000,83600,11540,11200,15400,3,Engineering Manager,Resident,569234,HDB 5-room,19800,0,EMP005,2024-04-15,correction
+SG150,S6789015A,Aaron Loh,Single,2023,2024-04-12,72000,61050,6105,6300,10950,0,Machine Learning Engineer,Resident,119234,Private Condo,14400,0,EMP001,2024-04-15,new
+SG151,S7890126B,Nurul Fatimah,Married,2023,2024-03-28,55000,48550,3855,4200,6450,2,UI/UX Designer,Resident,560456,HDB 3-room,11000,0,EMP006,2024-04-15,new
+SG152,S8901237C,Thomas Koh,Single,2023,2024-04-05,98000,83100,12465,12000,14900,0,Solutions Architect,Resident,018234,CBD Office,19600,0,EMP007,2024-04-15,new
+SG153,S9012348D,Anita Raj,Married,2023,2024-02-20,67000,57550,5255,5600,9450,1,Business Analyst,Resident,238567,Private Condo,13400,0,EMP008,2024-04-15,new
+SG154,S0123459E,Bernard Yeo,Single,2023,2024-03-15,44000,40550,2055,2400,3450,0,Junior Data Engineer,Resident,730234,HDB 3-room,8800,0,EMP001,2024-04-15,new
+SG155,,Richard Goh,Married,2023,2024-04-10,83000,70050,7505,7800,12950,2,Operations Director,Resident,BADPOST,Landed Property,16600,0,EMP009,2024-04-15,new
+SG156,S2345671F,Jasmine Chia,Single,2023,2024-03-22,61000,53050,4805,5100,7950,0,Data Scientist,Resident,119567,Private Condo,12200,0,EMP003,2024-04-15,new
+SG157,INVALID_X1,Kenny Sim,Married,2023,2024-13-40,57000,49550,4455,4800,7450,1,Network Administrator,Resident,569567,HDB 4-room,11400,0,EMP002,2024-04-15,new
+SG158,S4567893G,Michelle Ong,Single,2023,2024-04-08,76000,64050,6405,6600,11950,0,Product Owner,Resident,238890,Private Condo,15200,0,EMP010,2024-04-15,new
+SG159,S5678904H,Suresh Menon,Married,2023,2024-02-14,108000,91550,14733,14200,16450,3,VP Engineering,Resident,249234,Landed Property,21600,0,EMP001,2024-04-15,new

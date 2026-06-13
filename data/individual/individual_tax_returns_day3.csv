@@ -1,0 +1,11 @@
+taxpayer_id,nric,full_name,filing_status,assessment_year,filing_date,annual_income_sgd,chargeable_income_sgd,tax_payable_sgd,tax_paid_sgd,total_reliefs_sgd,number_of_dependents,occupation,residential_status,postal_code,housing_type,cpf_contributions_sgd,foreign_income_sgd,employer_id,batch_date,record_type
+SG044,S6789012R,Heng Swee Keat,Single,2023,2024-04-16,88000,74100,8910,8600,13900,0,Policy Analyst,Resident,188234,HDB 5-room,17600,0,EMP011,2024-04-16,late_arrival
+SG045,S7890123S,Kavitha Muthusamy,Married,2023,2024-04-14,52000,46050,3105,3400,5950,2,Administrative Executive,Resident,600345,HDB 3-room,10400,0,EMP012,2024-04-16,late_arrival
+SG046,S8901234T,Lim Kang Wei,Single,2023,2024-04-15,69000,58050,5305,5600,10950,0,Compliance Officer,Resident,079234,CBD Office,13800,0,EMP013,2024-04-16,late_arrival
+SG155,S1234570A,Richard Goh,Married,2023,2024-04-10,83000,70050,7505,7800,12950,2,Operations Director,Resident,249567,Landed Property,16600,0,EMP009,2024-04-16,correction
+SG157,S2345671G,Kenny Sim,Married,2023,2024-03-18,57000,49550,4455,4800,7450,1,Network Administrator,Resident,569567,HDB 4-room,11400,0,EMP002,2024-04-16,correction
+SG160,S9012349I,Felicia Ong,Single,2023,2024-04-14,74000,62050,6205,6400,11950,0,Cloud Architect,Resident,119890,Private Condo,14800,0,EMP001,2024-04-16,new
+SG161,S0123460J,Arun Krishnan,Married,2023,2024-03-28,96000,80550,11040,10700,15450,2,Tech Lead,Resident,018567,CBD Office,19200,0,EMP007,2024-04-16,new
+SG162,G4567891K,Sarah Williams,Single,2023,2024-04-10,145000,125200,25040,24500,19800,0,Expatriate Consultant,Non-Resident,238567,Private Condo,0,18000,EMP014,2024-04-16,new
+SG163,S1234571L,Tan Bee Hoon,Married,2023,2024-04-12,58000,51050,4105,4400,6950,1,Procurement Manager,Resident,560789,HDB 4-room,11600,0,EMP015,2024-04-16,new
+SG164,S2345672M,Faizal Rahman,Single,2023,2024-04-08,42000,38550,1855,2200,3450,0,Junior Analyst,Resident,730567,HDB 2-room,8400,0,EMP003,2024-04-16,new
