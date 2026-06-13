@@ -10,7 +10,7 @@ Built in Python with DuckDB, Prefect, and FastAPI
 ## Features
 - **Ingests** daily individual CSV batches + an employer JSON, handles schema evolution and uncleaned data
 - **Validates** against 6 data quality rules and gives overall quality scores across 3 domains (completeness, validity, accuracy)
-- **Loads** a DuckDB warehouse with SCD2 history, idempotent incremental loading, late-arrival handling, and correction auditing
+- **Loads** a DuckDB warehouse with SCD2 history (adds new row each time an attribute changes instead of overwriting it), idempotent incremental loading, late-arrival handling, and correction auditing
 - **Orchestrates** with Prefect (retries, alerts)
 - **Exposes** the data through FastAPI
 
