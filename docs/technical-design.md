@@ -58,7 +58,7 @@ extra fields are dropped so every employer keeps the same shape for the warehous
 
 A domain's score is `passing rows / total rows x 100`, and a row passes a domain only if it
 passes every rule in that domain. Bad values are parsed to a safe `NULL` and flagged - they still
-load, so analytics see the full picture and the source can correct them later.
+load and the source can correct them later.
 
 For example, these rows load but are flagged:
 
@@ -97,35 +97,46 @@ erDiagram
 
 ### The tables
 
-**`dim_taxpayer`** - one row per *version* of a taxpayer. Holds the descriptive attributes
-(name, NRIC, occupation, residential status, postal code, housing type, dependents). It keeps
-history with SCD Type 2: when an attribute changes, the current row is closed (`valid_to` set,
-`is_current = false`) and a new current row is opened. Primary key is **`taxpayer_sk`**, a number
-auto-generated from a database sequence (1, 2, 3, ...) - one `taxpayer_id` spans many versions,
-so the id alone cannot be the key.
+**`dim_taxpayer`** - one row per *version* of a taxpayer.
+1. **Holds:** descriptive attributes - name, NRIC, occupation, residential status, postal code,
+   housing type, dependents.
+2. **Primary key:** `taxpayer_sk`, a number auto-generated from a database sequence (1, 2, 3,
+   ...) - one `taxpayer_id` spans many versions, so the id alone cannot be the key.
+3. **Links:** referenced by `fact_tax_returns` via `taxpayer_sk`.
+4. **Note:** keeps history with SCD Type 2 - when an attribute changes, the current row is closed
+   (`valid_to` set, `is_current = false`) and a new current row is opened.
 
-**`dim_employer`** - one row per employer. Reference data from the JSON (company name, UEN,
-industry, address, employee count). Primary key on `employer_id`. No history, just a simple
-lookup. A single `UNKNOWN` row catches the ~20% of returns (the self-employed) with no employer
-match, so every fact row still has a valid employer reference.
+**`dim_employer`** - one row per employer.
+1. **Holds:** reference data from the JSON - company name, UEN, industry, address, employee count.
+2. **Primary key:** `employer_id`.
+3. **Links:** referenced by `fact_tax_returns` via `employer_id`.
+4. **Note:** no history, just a simple lookup. A single `UNKNOWN` row catches the ~20% of returns
+   (the self-employed) with no employer match, so every fact row still has a valid employer
+   reference.
 
-**`fact_tax_returns`** - one row per return (the numbers). Holds the measures: annual income,
-chargeable income, tax payable, tax paid, reliefs, CPF. Primary key on
-`(taxpayer_id, assessment_year)`. Links to `dim_employer` via `employer_id`, and to
-`dim_taxpayer` via `taxpayer_sk` - specifically the version valid **on the filing date**, so a
-return reflects who the taxpayer was when they filed (this is also how a late-arriving filing
-resolves to the right historical version, not the latest). An `is_corrected` flag marks rows that
-a correction has fixed.
+**`fact_tax_returns`** - one row per return (the numbers).
+1. **Holds:** the measures - annual income, chargeable income, tax payable, tax paid, reliefs, CPF.
+2. **Primary key:** `(taxpayer_id, assessment_year)`.
+3. **Links:** to `dim_employer` via `employer_id`, and to `dim_taxpayer` via `taxpayer_sk` -
+   specifically the version valid **on the filing date**, so a return reflects who the taxpayer
+   was when they filed (this is also how a late-arriving filing resolves to the right historical
+   version, not the latest).
+4. **Note:** an `is_corrected` flag marks rows that a correction has fixed.
 
-**`agg_data_quality_metrics`** - one row per (batch, domain). The DQ score, passing count, and
-total for each domain on each batch run, so data quality is tracked over time. **Standalone** -
-it has no foreign key to the dimensions or fact; its primary key is `(batch, domain)`, where
-`batch` is the load identifier (e.g. `day1`).
+**`agg_data_quality_metrics`** - one row per (batch, domain).
+1. **Holds:** the DQ score, passing count, and total for each domain on each batch run.
+2. **Primary key:** `(batch, domain)`, where `batch` is the load identifier (e.g. `day1`).
+3. **Links:** standalone - no foreign key to the dimensions or fact.
+4. **Note:** tracks data quality over time.
 
-**`fact_corrections`** - one row per correction, with its own primary key `correction_id`. The
-audit trail: when a correction overwrites a fact, the old money values are copied here with the
-date. It **links back to `fact_tax_returns` on `(taxpayer_id, assessment_year)`** - the fact's
-key - so each audit row can be matched to the return it corrected.
+**`fact_corrections`** - one row per correction.
+1. **Holds:** the audit trail - when a correction overwrites a fact, the old money values are
+   copied here with the date.
+2. **Primary key:** `correction_id`.
+3. **Links:** back to `fact_tax_returns` on `(taxpayer_id, assessment_year)` - the fact's key -
+   so each audit row can be matched to the return it corrected.
+4. **Note:** lets the fact stay lean (corrections overwrite in place) while old values remain
+   auditable here.
 
 ### How a batch is loaded
 
